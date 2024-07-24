@@ -279,8 +279,9 @@ cdef class LuaRuntime:
     def __cinit__(self, state=None, encoding='UTF-8', source_encoding=None,
                   attribute_filter=None, attribute_handlers=None,
                   bint register_eval=True, bint unpack_returned_tuples=False,
-                  bint register_builtins=True, overflow_handler=None):
-
+                  bint register_builtins=True, overflow_handler=None,
+				  max_memory=None):
+                  
         cdef lua_State *L
         
         if state is None:

@@ -27,3 +27,4 @@ TEST/
 
 # Track Lua source code
 !third-party/**/*.c
+lupa/embedded.h
